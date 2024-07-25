@@ -1,0 +1,362 @@
+:root{
+    --gris: #313131;
+    --principal: #714ab5;
+    --azul: #296cbb;
+    font-family: "Montserrat", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--gris);
+    color: #fff;
+}
+
+.menu-admin{
+	display: flex;
+	flex-direction: column;
+	margin: 30px auto;
+	padding: 30px;
+	background-color: #fff;
+	width: 50%;
+	border-top: 10px solid var(--principal);
+	border-bottom: 10px solid var(--principal);
+}
+
+.menu-admin a{
+	text-decoration: none;
+	color: var(--gris);
+	margin: 5px 0;
+	padding: 8px 0;
+	width: 100%;
+	text-align: center;
+	box-shadow: 0 0 3px var(--principal);
+	background-color: #f0f0f0;
+	border-radius: 5px;
+}
+
+.menu-admin h1{
+	color: var(--gris);
+	text-align: center;
+	margin-bottom: 8px;
+}
+
+.menu-admin h2{
+	margin: 5px;
+	margin-left: 10px;
+	color: var(--gris);
+}
+
+.atras, .btn{
+	padding: 10px 0;
+    width: fit-content;
+    background-color: var(--azul);
+    border: none;
+    cursor: pointer;
+	margin-left: 50px;
+	margin-bottom: 50px;
+}
+
+.btn, .atras a, .btn a, .elegir-cargo .btn{
+	padding: 10px 20px;
+	color: #fff;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+.btn{
+	margin: 30px 10px 0 0;
+	transition: filter .2s;
+	font-family: "Montserrat", sans-serif;
+}
+
+.btn:hover, .lupa:hover{
+	filter: brightness(.85);
+}
+
+.inicio{
+	margin-left: 50px;
+	background-color: #575757;
+}
+
+.lupa:active{
+	filter: brightness(.70);
+}
+
+.titulo{
+	margin: 10px;
+	text-align: center;
+}
+
+.lista{
+	margin: 20px auto;
+	background-color: #f1f1f1;
+	color: var(--gris);
+	border-top: 10px solid var(--principal);
+	border-bottom: 10px solid var(--principal);
+}
+
+.lista .encabezado{
+	background-color: #e6d8ff;
+}
+
+.lista td{
+	padding: 10px 25px;
+	text-align: center;
+}
+
+.lista .icono{
+	height: 1.5em;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #e6d8ff;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f1f1f1;
+}
+
+.info-usuario{
+	margin: 30px auto;
+	padding: 30px 60px;
+	width: 70%;
+	background-color: #fff;
+	color: var(--gris);
+	border-top: 10px solid var(--principal);
+	border-bottom: 10px solid var(--principal);
+}
+
+.info-usuario p, .info-usuario hr{
+	margin: 8px 0;
+}
+
+.elegir-cargo{
+	margin-top: 50px;
+}
+
+#form-preseleccion, #form-seleccion{
+	display: none;
+}
+
+header{
+	background-color: #f1f1f1;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+header h2{
+	text-align: center;
+	margin-top: 50px;
+}
+
+header h1{
+	color: var(--gris);
+}
+
+.favicon{
+	height: 3em;
+}
+
+.header-inicio{
+	background-image: url("img/fondo.jpg");
+	border-bottom: 5px solid #eda409;
+}
+
+.header-inicio h1{
+	color: #fff;
+}
+
+.top{
+	display: grid;
+	grid-template-columns: 20% 1fr 20%;
+	justify-items: center;
+	align-items: center;
+	padding: 30px;
+}
+
+.header-inicio .top{
+	background-color: #00000020;
+}
+
+.btn-login{
+	float: right;
+	clear: none;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	align-items: center;
+}
+
+.div-buscador{
+	display: grid;
+	grid-template-columns: max-content auto max-content;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 90px auto;
+	width: fit-content;
+	font-size: 18px;
+	background-color: var(--principal);
+}
+
+.div-buscador h3{
+	display: block;
+	width: inherit;
+	padding: 10px 20px;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.div-buscador input{
+	width: 100%;
+	padding: 10px;
+	font-size: 18px;
+	border: 3px solid var(--principal);
+	border-radius: 0;
+}
+
+.lupa, .div-buscador h3{
+	border: 1px solid var(--principal);
+	cursor: pointer;
+	transition: filter .2s;
+}
+
+.icono{
+	height: 1.5rem;
+}
+
+.lupa .icono{
+	height: 1.2rem;
+}
+
+.cargo .icono{
+	height: 1.8em;
+	margin-right: 10px;
+}
+
+.cargo span{
+	padding-bottom: 10px;
+}
+
+.lista-cagros{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+	margin: 50px auto;
+	padding: 20px;
+	padding-bottom: 50px;
+	width: 85%;
+	background-color: #F1F1F1;
+	color: var(--gris);
+	box-shadow: 0 0 6px #111;
+	border-radius: 3px;
+}
+
+.lista-cagros .cargo{
+	padding: 20px;
+	border: 1px solid #BFBFBF;
+	border-radius: 3px;
+}
+
+.cargo h3, .cargo h2{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	color: var(--principal);
+}
+
+.cargo pre{
+	padding: 10px 0;
+	margin: 15px 10px 30px 10px;
+	color: #3E3E3E;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	white-space: pre-wrap;
+	font-size: 16px;
+	height: 8em;
+	overflow-y: scroll;
+	border-top: 1px solid #BFBFBF;
+	border-bottom: 1px solid #BFBFBF;
+}
+.un-cargo{
+	margin: 50px auto;
+	padding: 20px;
+	width: 85%;
+	background-color: #F1F1F1;
+	color: var(--gris);
+}
+
+.un-cargo pre{
+	height: 100%;
+	padding: 20px 0;
+	overflow: auto;
+}
+
+.div-postularse{
+	display: inline;
+}
+
+.borrar{
+	background-color: #eb3535;
+}
+
+.btns-cargo{
+	margin-top: 15px;
+}
+
+.titulo{
+	margin: 30px auto;
+}
+
+.filtro{
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	padding: 20px;
+	margin: 0 auto;
+	width: fit-content;
+	font-size: 18px;
+}
+
+.filtro div{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.filtro h3{
+	display: inline;
+}
+
+.filtro .lupa, .filtro .todos{
+	border: none;
+	background-color: var(--principal);
+	padding: 8px 15px;
+}
+
+.filtro .todos{
+	margin-left: 10px;
+	background-color: #575757;
+	font-weight: 500;
+	font-size: 17px;
+	cursor: pointer;
+}
+
+.filtro .todos a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.filtro input, .filtro select{
+	padding: 8px;
+	font-size: 17px;
+}
+
+.filtro select{
+	margin-left: 15px;
+}
+
